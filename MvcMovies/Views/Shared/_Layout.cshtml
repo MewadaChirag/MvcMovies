@@ -31,6 +31,13 @@
                         </li>
                     </ul>
                 </div>
+                <div class="collapse navbar-collapse d-sm-inline-flex flex-sm-row-reverse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="#">Login</a>
+                    <a class="btn btn-primary" href="#">Register</a>
+                </li>
+            </ul>
             </div>
         </nav>
     </header>
@@ -42,11 +49,11 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - Movies App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            Copyrights &copy; Movies App @DateTime.Now.Year <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
